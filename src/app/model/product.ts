@@ -10,7 +10,7 @@ export class Product {
     featured: boolean = false;
     active: boolean = true;
     onsale: boolean = false;
-    
+
     constructor(properties?: Product) {
         if (properties) {
             this.id = properties.id || 0;
@@ -25,6 +25,6 @@ export class Product {
             this.onsale = properties.onsale || false;
         }
     }
-} 
+}
 
 
