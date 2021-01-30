@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-product-slider',
@@ -7,8 +7,10 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class ProductSliderComponent implements OnInit {
 
-  //input tulajdonságként kapja meg az 5 terméket
+  //input tulajdonságként kapja meg az 5 terméket a hometól
   @Input() productsOnSlider: filteredProducts[] = [];
+  //output továbbadja őket a cardnak
+  @Output() products: Array<Product> = filtered;
 
   constructor() { }
 
