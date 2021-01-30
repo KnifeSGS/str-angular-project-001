@@ -1677,6 +1677,11 @@ export class ProductService {
     const onsaleProducts: Product[] = this.list.filter(product => product.onsale)
       .sort(() => 0.5 - Math.random())
       .slice(0, 5);
+
+    onsaleProducts.forEach(item => {
+      item.price = item.price * 0.8
+    });
+
     return onsaleProducts;
   }
   constructor() { }
