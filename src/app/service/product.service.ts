@@ -1664,6 +1664,7 @@ export class ProductService {
       }
 
   ]; 
+  static list: any;
 
   constructor() { }
 }
