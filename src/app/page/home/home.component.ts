@@ -11,6 +11,7 @@ import { ProductService } from 'src/app/service/product.service';
 export class HomeComponent implements OnInit {
 
   @Output() featuredFive = this.productService.getFeaturedFive();
+  @Output() onsaleFive = this.productService.getOnsaleFive();
 
   constructor(private productService: ProductService) {
   }
