@@ -3,9 +3,14 @@
   <div class="card-body d-flex flex-column">
     <h6 class="card-title"> {{ product.name }}</h6>
     <small class="text-muted"> {{ product.description }}</small>
-    <div class="card-infos">      
+    <div class="card-infos">
       <p class="card-text mt-3">Jelenlegi készlet: {{product.stock}}</p>
-      <p class="card-text">Ár: {{product.price}}</p>
+      <p class="card-text" *ngIf="product.onsale">Ár:
+        <del class="mr-2">{{product.price}}</del> <span
+          class=" text-danger">{{product.onsaleprice}}</span>
+        HUF
+      </p>
+      <p class="card-text" *ngIf="!product.onsale">Ár: {{product.price}} HUF</p>
     </div>
   </div>
 </div>
