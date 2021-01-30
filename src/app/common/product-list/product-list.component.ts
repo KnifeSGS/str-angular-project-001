@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/service/product.service';
 export class ProductListComponent implements OnInit {
   @Input() phraseString: string = '';
 
-  @Input() product: ProductService[] = [];
+  @Input() product: ProductService['list'][] = [];
 
   constructor() { }
 
