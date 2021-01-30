@@ -8,13 +8,10 @@ import { ProductService } from 'src/app/service/product.service';
   styleUrls: ['./product-list.component.scss']
 })
 export class ProductListComponent implements OnInit {
+ 
+  @Input() list: Product[] = [];
 
- productList: Product[] = this.productService.list;
-
- products = this.productList;
-
-
-  constructor(private productService: ProductService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

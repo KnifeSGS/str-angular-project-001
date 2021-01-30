@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { ProductService } from 'src/app/service/product.service';
 
 @Component({
   selector: 'app-cat01',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Cat01Component implements OnInit {
 
-  constructor() { }
-
+  @Output() categoryZero = this.productService.getCategoryProducts(0);
+  
+  constructor(private productService: ProductService) {
+  }
   ngOnInit(): void {
   }
 
