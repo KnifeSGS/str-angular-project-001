@@ -1684,5 +1684,10 @@ export class ProductService {
 
     return onsaleProducts;
   }
+
+  getCategoryProducts(category: number) {
+    const categoryProducts: Product[] = this.list.filter(product => category === product.catId);
+    return categoryProducts;
+  }
   constructor() { }
 }
