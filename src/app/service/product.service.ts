@@ -1674,7 +1674,10 @@ export class ProductService {
   };
 
   getOnsaleFive() {
-
+    const onsaleProducts: Product[] = this.list.filter(product => product.onsale)
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 5);
+    return onsaleProducts;
   }
   constructor() { }
 }
