@@ -1,4 +1,9 @@
 <h3>Featured:</h3>
 <app-product-slider [featured]="featuredFive"></app-product-slider>
 <h3>{{title}}</h3>
-<app-product-list [list]="categoryOne"></app-product-list>
+<div class="container">
+    <form class="form-inline my-2">
+      <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
+    </form>
+  </div>
+<app-product-list  [phraseString]="phrase" [list]="categoryOne"></app-product-list>
