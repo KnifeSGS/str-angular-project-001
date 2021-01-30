@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
+import { CategoryService } from 'src/app/service/category.service';
+import { ProductService } from 'src/app/service/product.service';
 
 @Component({
   selector: 'app-cat02',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cat02.component.scss']
 })
 export class Cat02Component implements OnInit {
+  title: string = this.categoryService.list[1].description;
+  @Output() featuredFive = this.productService.getFeaturedFive();
 
-  constructor() { }
+  @Output() categoryOne = this.productService.getCategoryProducts(1);
+
+  constructor(private productService: ProductService, private categoryService: CategoryService) { }
 
   ngOnInit(): void {
   }
