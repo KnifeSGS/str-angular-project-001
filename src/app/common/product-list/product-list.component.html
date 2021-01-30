@@ -1,1 +1,18 @@
-<p>product-list works!</p>
+<div class="row">
+    <div class="col-8">
+      <h3>Termékek</h3>
+      <table class="table table-striped">
+         <tbody>
+           <tr *ngFor="let product of products | filter:phrase">
+            <td>{{ product.id }}</td>
+            <td>{{ product.catId }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.description }}</td>
+            <td>{{ product.image }}</td>
+            <td>{{ product.price }}</td>
+           </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
