@@ -1,0 +1,21 @@
+.product-card {
+    margin: 0 5px;
+    width: 200px;
+    height: 750px;
+
+    .fit-image{
+        width: 100%;
+        object-fit: contain;
+        height: 300px;
+    }
+
+    .card-title {
+        height: 4.5rem;
+    }
+
+    .card-infos {
+        margin-top: auto;
+        margin-bottom: 5px;
+    }
+
+}
