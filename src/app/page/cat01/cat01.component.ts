@@ -1,6 +1,7 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { CategoryService } from 'src/app/service/category.service';
 import { ProductService } from 'src/app/service/product.service';
+import { HomeComponent } from '../home/home.component';
 
 @Component({
   selector: 'app-cat01',
@@ -12,7 +13,7 @@ export class Cat01Component implements OnInit {
   @Output() featuredFive = this.productService.getFeaturedFive();
 
   @Output() categoryZero = this.productService.getCategoryProducts(0);
-
+  featured: string = this.productService.subtitles[0];
   phrase: string = '';
 
   constructor(private productService: ProductService, private categoryService: CategoryService) { }

@@ -1,9 +1,10 @@
-<h3>Featured:</h3>
+<h3 class="my-5 py-2 text-center subtitle">{{ featured }}</h3>
 <app-product-slider [featured]="featuredFive"></app-product-slider>
-<h3>{{title}}</h3>
+<h3 class="my-5 py-2 text-center subtitle">{{title}}</h3>
 <div class="container">
-    <form class="form-inline my-2">
-      <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Search">
+    <form class="form-inline my-3">
+      <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text" placeholder="Szűrés...">
     </form>
   </div>
 <app-product-list [phraseString]="phrase" [list]="categoryZero"></app-product-list>
+<app-footer></app-footer>

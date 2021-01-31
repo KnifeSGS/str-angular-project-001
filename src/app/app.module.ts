@@ -11,6 +11,7 @@ import { ProductListComponent } from './common/product-list/product-list.compone
 import { FilterPipe } from './pipe/filter.pipe';
 import { ProductSliderComponent } from './common/product-slider/product-slider.component';
 import { ProductCardComponent } from './common/product-card/product-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ProductCardComponent } from './common/product-card/product-card.compone
     FilterPipe,
     ProductSliderComponent,
     ProductCardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

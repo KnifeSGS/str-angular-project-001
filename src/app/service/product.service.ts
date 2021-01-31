@@ -1802,6 +1802,7 @@ export class ProductService {
     }
   ];
   static list: any;
+  subtitles: string[] = ['Ajánlott termékek', 'Akciós termékek'];
 
   getFeaturedFive(): Product[] {
     const topFiveFeaturedProducts: Product[] = this.list.filter(product => product.featured)

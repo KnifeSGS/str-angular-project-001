@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.subtitle {
+    background: linear-gradient(to right, rgb(226, 189, 87), #ff9d00);
+}

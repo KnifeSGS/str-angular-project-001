@@ -1,0 +1,21 @@
+.link-color {
+    color: rgba($color: #ecda33, $alpha: 1.0) !important;
+    
+    &:hover {
+        color: rgba($color: #000000, $alpha: 1.0) !important;
+    }
+}
+
+.navbar-brand-color {
+    color: rgba($color: #ff9d00, $alpha: 1.0) !important;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.685);
+   
+}
+
+.bg-success {
+    background: linear-gradient(to right, rgb(0, 155, 0), rgb(0, 94, 0));
+}
+
+.navbar-collapse {
+    color: rgba($color: #ff9d00, $alpha: 1.0) !important;
+}
