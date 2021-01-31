@@ -14,7 +14,13 @@
     .fit-image{
         width: 100%;
         object-fit: cover;
+        object-position: 0% 0%;
         height: 300px;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            object-position: 100% 100%;
+        }
     }
 
     .card-title {
