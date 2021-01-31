@@ -13,9 +13,15 @@ export class Cat02Component implements OnInit {
 
   @Output() categoryOne = this.productService.getCategoryProducts(1);
 
+  phrase: string = '';
+
   constructor(private productService: ProductService, private categoryService: CategoryService) { }
 
   ngOnInit(): void {
+  }
+
+  onChangePhrase(event: Event): void {
+    this.phrase= (event.target as HTMLInputElement).value;
   }
 
 }
