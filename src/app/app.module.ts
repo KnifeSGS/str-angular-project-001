@@ -12,6 +12,7 @@ import { FilterPipe } from './pipe/filter.pipe';
 import { ProductSliderComponent } from './common/product-slider/product-slider.component';
 import { ProductCardComponent } from './common/product-card/product-card.component';
 import { FooterComponent } from './footer/footer.component';
+import { SorterPipe } from './pipe/sorter.pipe';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FooterComponent } from './footer/footer.component';
     ProductSliderComponent,
     ProductCardComponent,
     FooterComponent,
+    SorterPipe,
   ],
   imports: [
     BrowserModule,

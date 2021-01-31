@@ -12,6 +12,7 @@ export class ProductListComponent implements OnInit {
   
   @Input() phraseString: string = '';
   @Input() searchKey: string = '';
+  @Input() filterKey: string = '';
   @Input() list: Product[] = [];
   
   constructor() { }
