@@ -15,7 +15,29 @@ export class Cat02Component implements OnInit {
   phrase: string = '';
 
   placeholder = 'Szűrés név alapján...';
+  sortholder = 'Név szerint rendezve';
+  
   searchkey = 'name';
+  filterkey = 'name';
+
+  changefilterKey(key: string): void {
+    if (key === 'Név') {
+      this.filterkey = 'name';
+      this.sortholder = `${key} szerint rendezve`;
+    }
+    if (key === 'Ár') {
+      this.filterkey = 'price';
+      this.sortholder = `Alapár szerint rendezve`;
+    }
+    if (key === 'Akciósok előre') {
+      this.filterkey = 'onsale';
+      this.sortholder = `${key}`;
+    }
+    if (key === 'Kiemeltek előre') {
+      this.filterkey = 'featured';
+      this.sortholder = `${key}`;
+    }
+  }
 
   changeSearchKey(key: string): void {
     this.placeholder = `Szűrés ${key} alapján...`;

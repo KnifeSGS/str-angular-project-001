@@ -1,22 +1,44 @@
 <h3 class="my-5 py-2 text-center subtitle">{{ featured }}</h3>
 <app-product-slider [featured]="featuredFive"></app-product-slider>
-<h3 class="my-5 py-2 text-center subtitle">{{title}}</h3>
-<div class="container d-flex flex-row">
-  <form class="form my-3">
-    <div class="text-center mb-1">{{placeholder}}</div>
-    <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text">
-  </form>
-  <div class="dropdown mx-4 my-auto">
-    <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
-      Szempontok...
-    </button>
-    <div class="dropdown-menu">
-      <span (click)="changeSearchKey('név')" class="dropdown-item">név</span>
-      <span (click)="changeSearchKey('leírás')" class="dropdown-item">leírás</span>
-      <span (click)="changeSearchKey('készlet')" class="dropdown-item">készlet</span>
-      <span (click)="changeSearchKey('ár')" class="dropdown-item">ár</span>
+<h3 class="mt-5 mb-3 py-2 text-center subtitle">{{title}}</h3>
+
+<div class="container d-flex flex-column">
+
+  <div class="container d-flex flex-wrap">
+    <div class="sortholder">{{ sortholder }}</div>
+    <div class="dropdown mx-4 my-auto">
+      <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+        Más...
+      </button>
+      <div class="dropdown-menu">
+        <span (click)="changefilterKey('Név')" class="dropdown-item">név</span>
+        <span (click)="changefilterKey('Ár')" class="dropdown-item">alapár</span>
+        <span (click)="changefilterKey('Kiemeltek előre')" class="dropdown-item">kiemeltek előre</span>
+        <span (click)="changefilterKey('Akciósok előre')" class="dropdown-item">akciósok előre</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-flex flex-wrap">
+    <form class="form mb-3">
+      <div class="text-center mb-1">{{placeholder}}</div>
+      <input (keyup)="onChangePhrase($event)" class="form-control mr-sm-2" type="text">
+    </form>
+
+    <div class="dropdown mx-4 my-auto">
+      <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown">
+        Szempontok...
+      </button>
+      <div class="dropdown-menu">
+        <span (click)="changeSearchKey('név')" class="dropdown-item">név</span>
+        <span (click)="changeSearchKey('leírás')" class="dropdown-item">leírás</span>
+        <span (click)="changeSearchKey('készlet')" class="dropdown-item">készlet</span>
+        <span (click)="changeSearchKey('ár')" class="dropdown-item">ár</span>
+      </div>
+
+
     </div>
   </div>
 </div>
-<app-product-list [phraseString]="phrase" [searchKey]="searchkey" [list]="categoryZero"></app-product-list>
+<app-product-list [phraseString]="phrase" [searchKey]="searchkey" [filterKey]="filterkey" [list]="categoryZero"></app-product-list>
 <app-footer></app-footer>
