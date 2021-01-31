@@ -10,9 +10,8 @@ import { ProductService } from 'src/app/service/product.service';
 export class Cat02Component implements OnInit {
   title: string = this.categoryService.list[1].description;
   @Output() featuredFive = this.productService.getFeaturedFive();
-
   @Output() categoryOne = this.productService.getCategoryProducts(1);
-
+  featured: string = this.productService.subtitles[0];
   phrase: string = '';
 
   constructor(private productService: ProductService, private categoryService: CategoryService) { }
