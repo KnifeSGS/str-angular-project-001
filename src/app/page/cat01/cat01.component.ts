@@ -16,6 +16,25 @@ export class Cat01Component implements OnInit {
   featured: string = this.productService.subtitles[0];
   phrase: string = '';
 
+  placeholder = 'Szűrés név alapján...';
+  searchkey = 'name';
+
+  changeSearchKey(key: string): void {
+    this.placeholder = `Szűrés ${key} alapján...`;
+    if (key === 'leírás') {
+      this.searchkey = 'description';
+    }
+    if (key === 'készlet') {
+      this.searchkey = 'stock';
+    }
+    if (key === 'ár') {
+      this.searchkey = 'price';
+    }
+    if (key === 'név') {
+      this.searchkey = 'name';
+    }
+  }
+
   constructor(private productService: ProductService, private categoryService: CategoryService) { }
 
   ngOnInit(): void {
