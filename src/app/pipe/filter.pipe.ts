@@ -9,10 +9,15 @@ export class FilterPipe implements PipeTransform {
     if (!Array.isArray(value) || !phrase || !key) {
       return value;
     }
-    phrase = ('' + phrase).toLowerCase();
-    return value.filter( item => {
-      const strItem: string = ('' + item[key]).toLowerCase();
-      return strItem.includes(phrase);      
-    });
+    if (key === 'name' || key === 'description') {
+      phrase = ('' + phrase).toLowerCase();
+      return value.filter(item => {
+        const strItem: string = ('' + item[key]).toLowerCase();
+        return strItem.includes(phrase);
+      });
+    }
+    if (key === 'stock' || key === 'price') {
+      return value.filter(item => item[key] == phrase)
+    }
   }
 }
