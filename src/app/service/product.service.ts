@@ -1807,14 +1807,14 @@ export class ProductService {
   getFeaturedFive(): Product[] {
     const topFiveFeaturedProducts: Product[] = this.list.filter(product => product.featured)
       .sort(() => 0.5 - Math.random())
-      .slice(0, 5);
+      .slice(0, 10);
     return topFiveFeaturedProducts;
   };
 
   getOnsaleFive() {
     const onsaleProducts: Product[] = this.list.filter(product => product.onsale)
       .sort(() => 0.5 - Math.random())
-      .slice(0, 5);
+      .slice(0, 10);
 
     return onsaleProducts;
   }

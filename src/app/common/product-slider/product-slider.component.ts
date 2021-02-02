@@ -10,6 +10,9 @@ export class ProductSliderComponent implements OnInit {
 
   @Input() featured: Product[] = [];
 
+  firstFive: Product[] = this.featured.map((item, index) => item[index] < 6 ? item[index] : '');
+  secondFive: Product[] = this.featured.slice(6, 10);
+
   constructor() {
 
   }
