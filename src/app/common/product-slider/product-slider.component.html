@@ -1,7 +1,54 @@
-<div class="container">
-  <div class="card-deck">
-    <div class="d-flex justify-content-center" *ngFor="let product of featured">
+<!-- <div class="container">
+  <div class="card-deck justify-content-center">
+    <div class="d-flex justify-content-center"
+      *ngFor="let product of featured.slice(0, 5)">
       <app-product-card [product]="product"></app-product-card>
     </div>
   </div>
+</div> -->
+<!--Carousel Wrapper-->
+<div id="multi-item-example"
+  class="carousel slide carousel-multi-item justify-content-center"
+  data-ride="carousel">
+
+  <!--Controls-->
+  <div class="controls-top my-3 d-flex justify-content-between">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i
+        class="fa fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
+        class="fa fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Slides-->
+  <div class="carousel-inner justify-content-center" role="listbox">
+
+    <!--First slide-->
+    <div class="card-deck carousel-item active justify-content-center">
+
+      <div class="justify-content-between flex-row d-flex"
+        *ngFor="let product of featured.slice(0, 5)">
+        <app-product-card [product]="product"></app-product-card>
+      </div>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="card-seck carousel-item justify-content-center">
+
+      <div class="justify-content-between flex-row d-flex"
+        *ngFor="let product of featured.slice(5, 10)">
+        <app-product-card [product]="product"></app-product-card>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+
+
+
+  </div>
+  <!--/.Slides-->
+
 </div>
+<!--/.Carousel Wrapper-->

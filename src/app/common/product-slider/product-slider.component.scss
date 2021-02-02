@@ -1,0 +1,24 @@
+/* smoother transitions */
+.carousel-inner>.carousel-item.next.left,
+.carousel-inner>.carousel-item.prev.right
+{
+  transition: all 1s ease;
+}
+
+.carousel-item {
+  position: relative;
+  display: none;
+  float: none!important;
+  width: 100%;
+  margin-right: 0!important;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: transform .6s ease-in-out;
+  margin-top: 1rem;
+}
+
+.carousel-item-next, .carousel-item-prev, .carousel-item.active {
+    display: flex!important;
+    position: relative;
+    top: 50%;
+}
