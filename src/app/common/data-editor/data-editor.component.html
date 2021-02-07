@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="card-deck justify-content-center">
+    <div class="d-flex justify-content-center"
+      *ngFor="let product of list | filter:phraseString:searchKey | sorter:filterKey">
+      <app-product-card-editor [product]="product"></app-product-card-editor>
+    </div>
+  </div>
+</div>

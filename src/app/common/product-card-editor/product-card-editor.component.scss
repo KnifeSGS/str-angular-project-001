@@ -1,0 +1,35 @@
+.product-card {
+  margin: 0 5px;
+  width: 200px;
+  height: 850px;
+  transition: transform 0.2s;
+  
+
+  &:hover {
+      transform: scale(1.02);
+      box-shadow: 3px 3px 10px rgba(116, 116, 116, 0.294);
+  }
+
+
+  .fit-image{
+      width: 100%;
+      object-fit: cover;
+      object-position: 0% 0%;
+      height: 250px;
+      transition: all 0.2s ease-in-out;
+    
+      &:hover {
+          object-position: 100% 100%;
+      }
+  }
+
+  .card-title {
+      height: 4.5rem;
+  }
+
+  .card-infos {
+      margin-top: auto;
+      margin-bottom: 5px;
+  }
+
+}

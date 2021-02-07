@@ -1,0 +1,33 @@
+<div class="card product-card mb-4">
+  <img [src]="product.image" class="card-img-top fit-image bg-light"
+    alt="product_image">
+  <div class="card-body bg-light d-flex flex-column">
+    <p><input type="text" value="{{product.image}}"></p>
+    <h6 class="card-title text-center"> <input type="text"
+        value="{{product.name}}"></h6>
+    <p class="text-muted"> <input type="text" value="{{product.description}}">
+    </p>
+    <small class="text-muted">"ID: {{product.id}}"</small>
+    <p class="text-muted">
+      <input name="catid" type="text" value="{{product.catId}}">
+    </p>
+
+    <div class="card-infos text-center">
+      <p class="card-text mt-3">Jelenlegi készlet: <input type="text"
+          value="{{product.stock}}"></p>
+      <p class="card-text">Ár:
+        <del class="mr-2"><input type="text" value="{{product.price}}"></del>
+      </p>
+      <p class="card-text">Akciós ár:
+        <del class="mr-2"><input type="text"
+            value="{{product.onsaleprice}}"></del>
+      </p>
+      <p class="card-text">Akciós: <input type="text"
+          value="{{product.onsale}}">
+      </p>
+      <button class="btn btn-success mr-2"><i
+          class="fa fa-refresh"></i></button>
+      <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+    </div>
+  </div>
+</div>

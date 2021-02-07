@@ -16,6 +16,11 @@ export class CategoryService {
       name: "DVD tokos",
       description: "DVD tokos PC játékok"
     },
+    {
+      id: 2,
+      name: "Admin",
+      description: "Admin page"
+    },
   ]
 
   constructor() { }
