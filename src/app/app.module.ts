@@ -16,6 +16,8 @@ import { SorterPipe } from './pipe/sorter.pipe';
 import { DataEditorComponent } from './common/data-editor/data-editor.component';
 import { ProductCardEditorComponent } from './common/product-card-editor/product-card-editor.component';
 import { AdminComponent } from './page/admin/admin.component';
+import { BooleanfilterPipe } from './pipe/booleanfilter.pipe';
+
 
 @NgModule({
   declarations: [
@@ -33,6 +35,8 @@ import { AdminComponent } from './page/admin/admin.component';
     AdminComponent,
     DataEditorComponent,
     ProductCardEditorComponent,
+    BooleanfilterPipe
+    
   ],
   imports: [
     BrowserModule,
