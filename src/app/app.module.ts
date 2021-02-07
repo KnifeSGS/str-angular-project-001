@@ -13,6 +13,9 @@ import { ProductSliderComponent } from './common/product-slider/product-slider.c
 import { ProductCardComponent } from './common/product-card/product-card.component';
 import { FooterComponent } from './footer/footer.component';
 import { SorterPipe } from './pipe/sorter.pipe';
+import { DataEditorComponent } from './common/data-editor/data-editor.component';
+import { ProductCardEditorComponent } from './common/product-card-editor/product-card-editor.component';
+import { AdminComponent } from './page/admin/admin.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +30,9 @@ import { SorterPipe } from './pipe/sorter.pipe';
     ProductCardComponent,
     FooterComponent,
     SorterPipe,
+    AdminComponent,
+    DataEditorComponent,
+    ProductCardEditorComponent,
   ],
   imports: [
     BrowserModule,

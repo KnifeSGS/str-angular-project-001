@@ -111,7 +111,7 @@ ne kelljen vele annyit dolgozni a stílusnál.
 
 
 # Második felvonás
-A második körben a már elkészült alkalmazást kell továbbfejleszteni. A feladat egy adminisztrációs felület készítése, ahol a termékeket szerkeszteni lehet. Ez az admin felület a termékeket már élő szerverről fogja betölteni.
+> A második körben a már elkészült alkalmazást kell továbbfejleszteni. A feladat egy adminisztrációs felület készítése, ahol a termékeket szerkeszteni lehet. Ez az admin felület a termékeket már élő szerverről fogja betölteni.
 
 ## AdminComponent
 - Hozzatok létre egy új komponenst, admin néven.
