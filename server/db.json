@@ -1,6 +1,6 @@
-  {
-   "list": [  
-  {
+{
+  "list": [
+    {
       "id": 1,
       "catId": 0,
       "name": "Star Wars: X-Wing vs. TIE Fighter nagydobozos (német dobozos angol)",
@@ -162,58 +162,6 @@
       "name": "MTV's Slam Scape",
       "description": "papírdobozos, első kiadás, angol/német/francia/spanyol/olasz feliratos papírdobozos, angol/német/francia/spanyol/olasz nyelvű papírkézikönyv, cd tokban az eredeti cd, angol nyelvű játék. CD állapota: szinte karcmentes, tesztelt, működik.",
       "image": "../assets/img/PCBOX073.jpg",
-      "price": 4000,
-      "onsaleprice": 3200,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
-      "id": 14,
-      "catId": 1,
-      "name": "A keresztapa 2 (The Godfather II 2)",
-      "description": "dvd tokos, EA Classics kiadás, magyar feliratos borító, eredeti dvd, angol nyelvű játék. DVD állapota: szinte karcmentes, tesztelt, működik. A játék telepítéséhez internetkapcsolat és aktiválás szükséges. Még van szabad aktiválás, így telepíthető és használható (tesztelve lett).",
-      "image": "../assets/img/PCDVD7418.jpg",
-      "price": 2000,
-      "onsaleprice": 1600,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
-      "id": 15,
-      "catId": 1,
-      "name": "Acélszív (Hearts of Iron)",
-      "description": "dvd tokos, első kiadás, magyar feliratos borító, magyar nyelvű papírkézikönyv, eredeti cd, magyar feliratos játék. CD állapota:  karcmentes, újnak tűnik",
-      "image": "../assets/img/PCDVD7421.jpg",
-      "price": 4000,
-      "onsaleprice": 3200,
-      "stock": 1,
-      "featured": true,
-      "active": true,
-      "onsale": false
-    },
-    {
-      "id": 16,
-      "catId": 1,
-      "name": "Age of Empires Gold Edition (Rise of Rome is)",
-      "description": "dvd tokos, Ubisoft Exclusive kiadás, magyar/angol/olasz feliratos borító, eredeti cd, angol nyelvű játék. Ez a kiadás tartalmazza az Age of Empires 1 alapjátékot és a The Rise of Rome kiegészítő lemezt. CD állapota: szinte karcmentes, tesztelt, működik.",
-      "image": "../assets/img/PCDVD7426.jpg",
-      "price": 1500,
-      "onsaleprice": 1200,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
-      "id": 17,
-      "catId": 1,
-      "name": "Anno 1503 Gold Edition",
-      "description": "dvd tokos, első kiadás, angol/magyar feliratos borító, eredeti dvd, angol nyelvű játék. DVD állapota: karcmentes, újnak tűnik",
-      "image": "../assets/img/PCDVD6832.jpg",
       "price": 4000,
       "onsaleprice": 3200,
       "stock": 1,
@@ -1093,19 +1041,6 @@
       "onsale": false
     },
     {
-      "id": 85,
-      "catId": 1,
-      "name": "Alan Wake's American Nightmare (új)",
-      "description": "dvd tokos, első kiadás, angol feliratos borító, eredeti dvd, angol nyelvű játék. Új, bontatlan, fóliás. Figyelem: telepítéshez internetkapcsolat és ingyenes Steam fiók szükséges.",
-      "image": "../assets/img/PCDVD6469.jpg",
-      "price": 3500,
-      "onsaleprice": 2800,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
       "id": 86,
       "catId": 1,
       "name": "Call of Juarez: Bound in Blood (új)",
@@ -1386,32 +1321,6 @@
       "image": "../assets/img/PCDVD7330.jpg",
       "price": 2500,
       "onsaleprice": 2000,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
-      "id": 108,
-      "catId": 0,
-      "name": "12 O'Clock High: Bombing the Reich",
-      "description": "papírdobozos, első kiadás, angol feliratos papírdobozos, angol nyelvű papírkézikönyv, cd tokban az eredeti cd, angol nyelvű játék",
-      "image": "../assets/img/PCENB0002.jpg",
-      "price": 6000,
-      "onsaleprice": 4800,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
-      "id": 109,
-      "catId": 0,
-      "name": "Activision's Atari 2600 Action Pack 2",
-      "description": "papírdobozos, kollekció, angol feliratos papírdobozos, angol nyelvű papírkézikönyv a cd tokban, cd tokban az eredeti cd, angol nyelvű játékok. A kollekció 15db Atari 2600 játékot tartalmaz.",
-      "image": "../assets/img/PCENB0012.jpg",
-      "price": 4000,
-      "onsaleprice": 3200,
       "stock": 1,
       "featured": false,
       "active": true,
@@ -1794,5 +1703,5 @@
       "active": true,
       "onsale": false
     }
-    ]
-    }
+  ]
+}

@@ -1838,24 +1838,4 @@ export class ProductService {
     return this.http.delete<Product>(`${this.apiUrl}/${product.id}`);
   }
 
- getFeaturedFive(): Product[] {
-   const topFiveFeaturedProducts: Product[] = this.list.filter(product => product.featured)
-     .sort(() => 0.5 - Math.random())
-     .slice(0, 5);
-   return topFiveFeaturedProducts;
- };
-
- getOnsaleFive() {
-   const onsaleProducts: Product[] = this.list.filter(product => product.onsale)
-     .sort(() => 0.5 - Math.random())
-     .slice(0, 5);
-
-   return onsaleProducts;
- }
-
- getCategoryProducts(category: number) {
-   const categoryProducts: Product[] = this.list.filter(product => category === product.catId);
-   return categoryProducts;
- }
-
 }

@@ -11,9 +11,6 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class HomeComponent implements OnInit {
 
-  @Output() featuredFive = this.productService.getFeaturedFive();
-  @Output() onsaleFive = this.productService.getOnsaleFive();
-
   productList$: Observable<Product[]> = this.productService.getAll();
 
   featured: string = this.productService.subtitles[0];

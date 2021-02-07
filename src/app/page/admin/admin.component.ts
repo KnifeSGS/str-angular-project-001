@@ -1,4 +1,6 @@
 import { Component, OnInit, Output } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Product } from 'src/app/model/product';
 import { CategoryService } from 'src/app/service/category.service';
 import { ProductService } from 'src/app/service/product.service';
 
@@ -9,9 +11,9 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class AdminComponent implements OnInit {
   title: string = this.categoryService.list[2].description;
-  @Output() featuredFive = this.productService.getFeaturedFive();
+ 
+  productList$: Observable<Product[]> = this.productService.getAll();
 
-  @Output() categoryAll = this.productService.list;
   phrase: string = '';
 
   placeholder = 'Szűrés név alapján...';

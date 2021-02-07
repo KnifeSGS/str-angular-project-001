@@ -47,5 +47,5 @@
   </div>
 </div>
 <app-data-editor [phraseString]="phrase" [searchKey]="searchkey"
-  [filterKey]="filterkey" [list]="categoryAll"></app-data-editor>
+  [filterKey]="filterkey" [list]="productList$ | async"></app-data-editor>
 <app-footer></app-footer>
