@@ -25,7 +25,7 @@ export class ProductCardEditorComponent implements OnInit {
 
   updateProduct(product: Product): void {
     this.productService.update(product).subscribe(
-      () => console.log(product)
+      () => alert(`Product (id:${product.id}) has been updated`)
     );
   }
 

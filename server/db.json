@@ -60,7 +60,7 @@
       "image": "../assets/img/PCBOX050.jpg",
       "price": 3000,
       "onsaleprice": 2400,
-      "stock": 1,
+      "stock": "1",
       "featured": false,
       "active": true,
       "onsale": false

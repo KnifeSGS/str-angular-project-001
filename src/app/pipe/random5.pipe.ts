@@ -7,6 +7,11 @@ import { Product } from '../model/product';
 export class Random5Pipe implements PipeTransform {
 
   transform(array: Product[]): Product[] {
+
+    if (!Array.isArray(array)) {
+      return array;
+    };
+
     return array
         .sort(() => 0.5 - Math.random())
         .slice(0, 5);
