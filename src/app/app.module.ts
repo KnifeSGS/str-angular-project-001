@@ -18,6 +18,7 @@ import { ProductCardEditorComponent } from './common/product-card-editor/product
 import { AdminComponent } from './page/admin/admin.component';
 import { BooleanfilterPipe } from './pipe/booleanfilter.pipe';
 import { CategoryfilterPipe } from './pipe/categoryfilter.pipe';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import { CategoryfilterPipe } from './pipe/categoryfilter.pipe';
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

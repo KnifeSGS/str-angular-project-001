@@ -25,9 +25,9 @@
       <p class="card-text">Akciós: <input type="text"
           value="{{product.onsale}}">
       </p>
-      <button class="btn btn-success mr-2"><i
+      <button class="btn btn-success mr-2" (click)="updateProduct(product)"><i
           class="fa fa-refresh"></i></button>
-      <button class="btn btn-danger"><i class="fa fa-trash"></i></button>
+      <button class="btn btn-danger" (click)="removeProduct(product)"><i class="fa fa-trash"></i></button>
     </div>
   </div>
 </div>
