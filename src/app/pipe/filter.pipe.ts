@@ -9,6 +9,7 @@ export class FilterPipe implements PipeTransform {
     if (!Array.isArray(value) || !phrase || !key) {
       return value;
     }
+
     if (key === 'name' || key === 'description') {
       phrase = ('' + phrase).toLowerCase();
       return value.filter(item => {
@@ -17,7 +18,7 @@ export class FilterPipe implements PipeTransform {
       });
     }
     if (key === 'stock' || key === 'price') {
-      return value.filter(item => item[key] == phrase)
+      return value.filter(item => item[key] = phrase)
     }
   }
 }
