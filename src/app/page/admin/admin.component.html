@@ -46,6 +46,6 @@
     </div>
   </div>
 </div>
-<app-data-editor [phraseString]="phrase" [searchKey]="searchkey"
+<app-data-editor (deleteClick)="onDeleteProduct($event)" [phraseString]="phrase" [searchKey]="searchkey"
   [filterKey]="filterkey" [list]="productList$ | async"></app-data-editor>
 <app-footer></app-footer>
