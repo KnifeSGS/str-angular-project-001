@@ -1,5 +1,5 @@
 <h3 class="my-5 py-2 text-center subtitle">{{ featured }}</h3>
-<app-product-slider [featured]="featuredFive"></app-product-slider>
+<app-product-slider [featured]="productList$ | async | booleanfilter:'featured' | random5"></app-product-slider>
 <h3 class="my-5 py-2 text-center subtitle">{{ discount }}</h3>
-<app-product-slider [featured]="onsaleFive"></app-product-slider>
+<app-product-slider [featured]="productList$ | async | booleanfilter:'onsale' | random5"></app-product-slider>
 <app-footer></app-footer>

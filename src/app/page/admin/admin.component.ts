@@ -5,21 +5,26 @@ import { CategoryService } from 'src/app/service/category.service';
 import { ProductService } from 'src/app/service/product.service';
 
 @Component({
-  selector: 'app-cat02',
-  templateUrl: './cat02.component.html',
-  styleUrls: ['./cat02.component.scss']
+  selector: 'app-admin',
+  templateUrl: './admin.component.html',
+  styleUrls: ['./admin.component.scss']
 })
-export class Cat02Component implements OnInit {
-  title: string = this.categoryService.list[1].description;
-
+export class AdminComponent implements OnInit {
+  title: string = this.categoryService.list[2].description;
+ 
   productList$: Observable<Product[]> = this.productService.getAll();
 
-  featured: string = this.productService.subtitles[0];
+  onDeleteProduct(product: Product): void {
+    this.productService.remove(product).subscribe(
+      () => this.productList$ = this.productService.getAll()
+    );
+  }
+  
   phrase: string = '';
 
   placeholder = 'Szűrés név alapján...';
   sortholder = 'Név szerint rendezve';
-  
+
   searchkey = 'name';
   filterkey = 'name';
 
@@ -41,6 +46,7 @@ export class Cat02Component implements OnInit {
       this.sortholder = `${key}`;
     }
   }
+
 
   changeSearchKey(key: string): void {
     this.placeholder = `Szűrés ${key} alapján...`;
@@ -64,7 +70,7 @@ export class Cat02Component implements OnInit {
   }
 
   onChangePhrase(event: Event): void {
-    this.phrase= (event.target as HTMLInputElement).value;
+    this.phrase = (event.target as HTMLInputElement).value;
   }
 
 }
