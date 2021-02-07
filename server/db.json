@@ -365,19 +365,6 @@
       "onsale": false
     },
     {
-      "id": 34,
-      "catId": 1,
-      "name": "Colin McRae Rally 2.0",
-      "description": "dvd tokos, utánkiadás, magyar feliratos borító, eredeti cd, angol nyelvű játék. CD állapota: karcmentes, újnak tűnik",
-      "image": "../assets/img/PCDVD7194.jpg",
-      "price": 2500,
-      "onsaleprice": 2000,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
       "id": 35,
       "catId": 1,
       "name": "Colin McRae Rally 2005",
