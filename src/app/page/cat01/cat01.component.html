@@ -1,5 +1,5 @@
 <h3 class="my-5 py-2 text-center subtitle">{{ featured }}</h3>
-<app-product-slider [featured]="featuredFive"></app-product-slider>
+<app-product-slider [featured]="productList$ | async | booleanfilter:'featured'"></app-product-slider>
 <h3 class="mt-5 mb-3 py-2 text-center subtitle">{{title}}</h3>
 
 <div class="container d-flex flex-column">
@@ -40,5 +40,5 @@
     </div>
   </div>
 </div>
-<app-product-list [phraseString]="phrase" [searchKey]="searchkey" [filterKey]="filterkey" [list]="categoryZero"></app-product-list>
+<app-product-list [phraseString]="phrase" [searchKey]="searchkey" [filterKey]="filterkey" [list]="productList$ | async | categoryfilter:'0'"></app-product-list>
 <app-footer></app-footer>
