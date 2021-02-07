@@ -19,6 +19,7 @@ import { AdminComponent } from './page/admin/admin.component';
 import { BooleanfilterPipe } from './pipe/booleanfilter.pipe';
 import { CategoryfilterPipe } from './pipe/categoryfilter.pipe';
 import { FormsModule } from '@angular/forms';
+import { Random5Pipe } from './pipe/random5.pipe';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { FormsModule } from '@angular/forms';
     DataEditorComponent,
     ProductCardEditorComponent,
     BooleanfilterPipe,
-    CategoryfilterPipe
+    CategoryfilterPipe,
+    Random5Pipe
     
   ],
   imports: [
