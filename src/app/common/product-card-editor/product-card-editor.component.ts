@@ -11,6 +11,13 @@ export class ProductCardEditorComponent implements OnInit {
 
   @Input() product: Product = new Product();
 
+  constructor(
+    private productService: ProductService
+  ) { }
+
+  ngOnInit(): void {
+  }
+
   removeProduct(product: Product): void {
     this.productService.remove(product).subscribe(
       () => console.log("deleted")
@@ -19,15 +26,8 @@ export class ProductCardEditorComponent implements OnInit {
 
   updateProduct(product: Product): void {
     this.productService.update(product).subscribe(
-    () => console.log(product)
+      () => console.log(product)
     );
-  }
-
-  constructor(
-    private productService: ProductService
-  ) { }
-
-  ngOnInit(): void {
   }
 
 }
