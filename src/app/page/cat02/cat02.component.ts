@@ -1,4 +1,6 @@
 import { Component, OnInit, Output } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Product } from 'src/app/model/product';
 import { CategoryService } from 'src/app/service/category.service';
 import { ProductService } from 'src/app/service/product.service';
 
@@ -9,8 +11,9 @@ import { ProductService } from 'src/app/service/product.service';
 })
 export class Cat02Component implements OnInit {
   title: string = this.categoryService.list[1].description;
-  @Output() featuredFive = this.productService.getFeaturedFive();
-  @Output() categoryOne = this.productService.getCategoryProducts(1);
+
+  productList$: Observable<Product[]> = this.productService.getAll();
+
   featured: string = this.productService.subtitles[0];
   phrase: string = '';
 

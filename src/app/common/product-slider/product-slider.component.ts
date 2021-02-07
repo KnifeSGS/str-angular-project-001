@@ -10,6 +10,12 @@ export class ProductSliderComponent implements OnInit {
 
   @Input() featured: Product[] = [];
 
+  randomFive(products: Product[]): Product[] {
+    return products
+      .sort(() => 0.5 - Math.random())
+      .slice(0, 5);
+  };
+
   constructor() {
   }
 
