@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from 'src/app/model/product';
 import { ProductService } from 'src/app/service/product.service';
 
@@ -10,6 +10,7 @@ import { ProductService } from 'src/app/service/product.service';
 export class ProductCardEditorComponent implements OnInit {
 
   @Input() product: Product = new Product();
+  @Output() deleteClick: EventEmitter<boolean> = new EventEmitter();
 
   constructor(
     private productService: ProductService
@@ -18,10 +19,8 @@ export class ProductCardEditorComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  removeProduct(product: Product): void {
-    this.productService.remove(product).subscribe(
-      () => console.log("deleted")
-    );
+  onDeleteButtonClick(): void {
+    this.deleteClick.emit(true);
   }
 
   updateProduct(product: Product): void {

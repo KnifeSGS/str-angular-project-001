@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Product } from 'src/app/model/product';
 
 @Component({
@@ -7,12 +7,19 @@ import { Product } from 'src/app/model/product';
   styleUrls: ['./data-editor.component.scss']
 })
 export class DataEditorComponent implements OnInit {
+
   @Input() phraseString: string = '';
   @Input() searchKey: string = '';
   @Input() filterKey: string = '';
   @Input() list: Product[] = [];
 
+  @Output() deleteClick: EventEmitter<Product> = new EventEmitter();
+
   constructor() { }
+
+  onDeleteButtonClick(product: Product): void {
+    this.deleteClick.emit(product);
+  }
 
   ngOnInit(): void {
   }

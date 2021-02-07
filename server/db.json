@@ -170,19 +170,6 @@
       "onsale": false
     },
     {
-      "id": 18,
-      "catId": 1,
-      "name": "Baldur's Gate + Tales of the Sword Coast",
-      "description": "dvd tokos, első kiadás, angol/francia feliratos borító, eredeti 3 cd, angol nyelvű játék + kiegészítője. CD-k állapota: enyhén-közepesen karcos (hajszálkarcok), tesztelt, működik.",
-      "image": "../assets/img/PCDVD7036.jpg",
-      "price": 2500,
-      "onsaleprice": 2000,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
       "id": 19,
       "catId": 1,
       "name": "Battlefield 2 Complete Collection",
@@ -1327,32 +1314,6 @@
       "onsale": false
     },
     {
-      "id": 110,
-      "catId": 0,
-      "name": "Archipelag",
-      "description": "papírdobozos, első kiadás, angol feliratos papírdobozos, segédanyag, 1db 3,5 floppy, angol nyelvű játék",
-      "image": "../assets/img/PCENB0023.jpg",
-      "price": 5000,
-      "onsaleprice": 4000,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
-      "id": 111,
-      "catId": 0,
-      "name": "Armor Command",
-      "description": "papírdobozos, első kiadás, angol feliratos papírdobozos, angol nyelvű papírkézikönyv, reference guide, cd tokban az eredeti cd, angol nyelvű játék",
-      "image": "../assets/img/PCENB0024.jpg",
-      "price": 4000,
-      "onsaleprice": 3200,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
       "id": 112,
       "catId": 0,
       "name": "Cyberstorm 2: Corporate Wars",
@@ -1659,19 +1620,6 @@
       "image": "../assets/img/PCENB0323.jpg",
       "price": 3500,
       "onsaleprice": 2800,
-      "stock": 1,
-      "featured": false,
-      "active": true,
-      "onsale": false
-    },
-    {
-      "id": 136,
-      "catId": 0,
-      "name": "Avalon Hill's Diplomacy",
-      "description": "papírdobozos, első kiadás, angol feliratos papírdobozos, angol nyelvű papírkézikönyv, cd tokban az eredeti cd, angol nyelvű játék",
-      "image": "../assets/img/PCENB0377.jpg",
-      "price": 4000,
-      "onsaleprice": 3200,
       "stock": 1,
       "featured": false,
       "active": true,

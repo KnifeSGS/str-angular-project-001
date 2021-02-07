@@ -14,6 +14,12 @@ export class AdminComponent implements OnInit {
  
   productList$: Observable<Product[]> = this.productService.getAll();
 
+  onDeleteProduct(product: Product): void {
+    this.productService.remove(product).subscribe(
+      () => this.productList$ = this.productService.getAll()
+    );
+  }
+  
   phrase: string = '';
 
   placeholder = 'Szűrés név alapján...';
